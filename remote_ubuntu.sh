@@ -17,7 +17,7 @@ sed -i '4i\token = 51247864' frpc.ini
 sed -i '6c\[13389]' frpc.ini
 sed -i '9c\local_port = 3389' frpc.ini
 sed -i '10c\remote_port = 13389' frpc.ini
-sed -i '3i\token = 51247864' frps.ini
+echo 'token = 51247864' >> /home/admin/frp_0.34.2_linux_arm64/frps.ini
 mkdir /etc/frp
 cp /home/admin/frp_0.34.2_linux_arm64/frpc /etc/frp
 cp /home/admin/frp_0.34.2_linux_arm64/frpc.ini /etc/frp
