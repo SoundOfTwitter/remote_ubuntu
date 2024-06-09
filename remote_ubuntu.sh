@@ -15,8 +15,8 @@ tar -zxvf frp_0.34.2_linux_arm64.tar.gz
 cd /home/admin/frp_0.34.2_linux_arm64
 sed -i '4i\token = 51247864' frpc.ini
 sed -i '6c\[13389]' frpc.ini
-sed -i '8c\local_port = 3389' frpc.ini
-sed -i '9c\remote_port = 13389' frpc.ini
+sed -i '9c\local_port = 3389' frpc.ini
+sed -i '10c\remote_port = 13389' frpc.ini
 sed -i '3i\token = 51247864' frps.ini
 cp /home/admin/frp_0.34.2_linux_arm64/systemd/frpc.service /etc/systemd/system
 cp /home/admin/frp_0.34.2_linux_arm64/systemd/frps.service /etc/systemd/system
